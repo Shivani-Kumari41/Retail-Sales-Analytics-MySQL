@@ -39,6 +39,16 @@ The database `retail_sales` has four tables:
 - Apple is the top brand by revenue (driven by iPhone and MacBook)
 - A small set of high-value customers contribute a large share of sales
 - Peak sales occur in the evening hours (around 4–9 PM)
+## 5.1 Visual Outputs
+
+### Revenue by Category
+![Revenue by Category](images/revenue_by_category.png)
+
+### Top Spending Customers
+![Top Spending Customers](images/top_customers.png)
+
+### ER Diagram
+![ER Diagram](images/er_diagram.png)
 
 ## 6. How to Run
 
