@@ -1,58 +1,69 @@
-# Retail-Sales-Analytics-MySQL
-SQL-based retail sales analytics project identifying top revenue drivers, customer behavior, and demand patterns using MySQL.
-# Retail Sales Analytics using MySQL (Electronics Store)
+# Retail Sales Analytics using MySQL
 
-## 1. Objective
+📌 **Objective**  
+Analyze retail electronics sales data using SQL to identify revenue drivers, top customers, and peak sales time to support business decisions.
 
-Analyze retail electronics sales data using SQL to:
-- Find total revenue from completed orders
-- Identify top categories, products, and brands by revenue
-- Study high-value customers and repeat purchase behavior
-- Understand peak sales hours during the day
+---
 
-## 2. Tools & Skills Used
+### 📂 Tools & Skills Used
+- MySQL Workbench
+- SQL (Joins, Aggregations, Window Functions)
+- Relational Database Design
+- Business Insights & Interpretation
 
-- MySQL, MySQL Workbench
-- SQL: JOIN, GROUP BY, ORDER BY, SUM, COUNT, AVG
-- Window functions: RANK()
+---
 
-## 3. Database Design
+## 🛒 Database Overview
+Retail Sales Database with 4 core tables:
+- `customers` → customer profile details
+- `products` → product-level information
+- `orders` → order details & payment status
+- `order_items` → item-wise revenue contribution
 
-The database `retail_sales` has four tables:
-- `customers` – customer details (name, city, state, join_date)
-- `products` – product details (name, category, brand, prices)
-- `orders` – each customer order (date, payment, status)
-- `order_items` – products inside each order (quantity, price)
+---
 
-## 4. Key Business Questions
+## ❓ Business Questions Answered
+1. Total revenue from completed orders?
+2. Which product categories & brands drive revenue?
+3. Top 5 revenue-generating products?
+4. Who are the top-spending customers?
+5. Which hours drive peak sales demand?
 
-1. What is the total revenue from completed orders?
-2. Which categories and brands drive the most revenue?
-3. Which products are the top revenue drivers?
-4. Who are the top spending customers?
-5. At what time of day are sales highest?
+---
 
-## 5. Summary of Insights
+## 📊 Key Findings (Insights)
+- Total Revenue = **₹573,400**
+- **73%** revenue comes from **Smartphones and Laptops**
+- Apple generates the **highest brand revenue** due to premium pricing
+- Customers buying laptops & smartphones are **high-value segment**
+- Sales peak during **4 PM – 9 PM**, strong opportunity for targeted offers
 
-- Total revenue from completed orders: ₹573,400
-- Smartphones and Laptops contribute most of the revenue (~73%)
-- Apple is the top brand by revenue (driven by iPhone and MacBook)
-- A small set of high-value customers contribute a large share of sales
-- Peak sales occur in the evening hours (around 4–9 PM)
-## 5.1 Visual Outputs
+---
+
+## 📸 Visual Outputs
 
 ### Revenue by Category
-![Revenue by Category](images/revenue_by_category.png)
+![Revenue By Category](images/revenue_by_category.png)
 
 ### Top Spending Customers
-![Top Spending Customers](images/top_customers.png)
+![Top Customers](images/top_customers.png)
 
-### ER Diagram
+### ER Diagram (Database Schema)
 ![ER Diagram](images/er_diagram.png)
 
-## 6. How to Run
+---
 
-1. Create the database in MySQL:
-   ```sql
-   CREATE DATABASE retail_sales;
-   USE retail_sales;
+## 🧠 SQL Concepts Used
+- INNER JOIN
+- GROUP BY / ORDER BY
+- SUM, COUNT
+- Window Function → `RANK()`
+- WHERE filters (`Completed` orders only)
+
+---
+
+## ▶️ How to Run This Project
+```sql
+CREATE DATABASE retail_sales;
+USE retail_sales;
+
